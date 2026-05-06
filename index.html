@@ -347,7 +347,7 @@
   .kicker-bar .meta-right strong { color: var(--ink); font-weight: 600; letter-spacing: 0.16em; }
 
   /* ---------- HERO ---------- */
-  .hero { padding: 80px 0 0; border-bottom: 1px solid var(--rule); }
+  .hero { padding: 56px 0 0; border-bottom: 1px solid var(--rule); }
   .hero .eyebrow {
     display: inline-flex; align-items: center; gap: 10px;
     font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
@@ -381,7 +381,7 @@
     border-top: 1px solid var(--ink);
     border-bottom: 1px solid var(--rule);
     padding: 22px 0;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
   }
   .hero-meta .item .lbl { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
   .hero-meta .item .val { font-family: var(--display); font-size: 18px; color: var(--ink); font-weight: 500; }
@@ -458,7 +458,7 @@
     display: grid;
     grid-template-columns: 220px minmax(0, 1fr) 220px;
     gap: 64px;
-    padding: 80px 0 0;
+    padding: 56px 0 0;
   }
   .article-grid > .body { max-width: 720px; margin: 0 auto; }
 
@@ -526,12 +526,12 @@
   .gutter .chip .sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
   /* ---------- Section + typography ---------- */
-  section.s { scroll-margin-top: 32px; padding: 88px 0; border-top: 1px solid var(--rule); }
+  section.s { scroll-margin-top: 32px; padding: 64px 0; border-top: 1px solid var(--rule); }
   section.s:first-of-type { border-top: none; padding-top: 8px; }
   .section-num {
     display: flex; align-items: baseline; gap: 16px;
     font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--blue); font-weight: 600; margin-bottom: 28px;
+    color: var(--blue); font-weight: 600; margin-bottom: 22px;
   }
   .section-num::after {
     content: ""; flex: 1; height: 1px; background: var(--rule);
@@ -542,12 +542,12 @@
     font-size: clamp(30px, 3.6vw, 46px);
     line-height: 1.08;
     letter-spacing: -0.025em;
-    margin: 0 0 36px;
+    margin: 0 0 28px;
     color: var(--ink);
     text-wrap: balance;
   }
   h2.section-h em { font-style: normal; color: var(--blue); font-weight: 700; }
-  h3 { font-family: var(--display); font-weight: 700; font-size: 22px; line-height: 1.25; letter-spacing: -0.015em; margin: 48px 0 18px; color: var(--ink); }
+  h3 { font-family: var(--display); font-weight: 700; font-size: 22px; line-height: 1.25; letter-spacing: -0.015em; margin: 36px 0 16px; color: var(--ink); }
   p { margin: 0 0 22px; line-height: 1.7; }
   p.lede::first-letter {
     font-family: var(--display);
@@ -574,8 +574,8 @@
   ul.bullets li { margin: 10px 0; line-height: 1.6; }
 
   blockquote.pull {
-    margin: 56px -32px;
-    padding: 40px 40px;
+    margin: 40px -32px;
+    padding: 32px 40px;
     border-top: 2px solid var(--blue);
     border-bottom: 1px solid var(--rule);
     font-family: var(--display);
@@ -602,8 +602,8 @@
     border: 1px solid var(--rule);
     background: var(--white);
     border-radius: var(--radius-md);
-    padding: 36px;
-    margin: 44px 0 12px;
+    padding: 32px;
+    margin: 32px 0 12px;
   }
   .glance h4 { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin: 0 0 24px; font-weight: 600; }
   .glance dl {
@@ -635,12 +635,12 @@
   }
   .trim:nth-child(3n) { border-right: none; }
   .trim:nth-last-child(-n+3) { border-bottom: none; }
-  .trim .engine-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; }
+  .trim .engine-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; white-space: nowrap; }
   .trim .engine { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); font-weight: 700; }
   .trim.wilderness .engine { color: var(--blue-deep); }
   .trim .badge { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
   .trim.flagship .badge { color: var(--blue); }
-  .trim .name { font-family: var(--display); font-size: 26px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); line-height: 1.05; margin: 6px 0 12px; }
+  .trim .name { font-family: var(--display); font-size: 26px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); line-height: 1.05; margin: 6px 0 12px; min-height: calc(26px * 1.05 * 2); }
   .trim .equip { font-size: 14px; color: var(--ink-soft); line-height: 1.65; margin: 0; }
 
   /* ---------- Specs strip ---------- */
@@ -650,14 +650,14 @@
     gap: 0;
     border-top: 1px solid var(--ink);
     border-bottom: 1px solid var(--ink);
-    margin: 48px 0 36px;
+    margin: 36px 0 28px;
   }
-  .spec-strip .item { padding: 28px 20px; border-right: 1px solid var(--rule); }
+  .spec-strip .item { padding: 28px 22px; border-right: 1px solid var(--rule); display: flex; flex-direction: column; }
   .spec-strip .item:first-child { padding-left: 0; }
   .spec-strip .item:last-child { border-right: none; padding-right: 0; }
-  .spec-strip .num { font-family: var(--display); font-size: 44px; font-weight: 500; line-height: 1.05; color: var(--blue-deep); letter-spacing: -0.02em; font-feature-settings: "lnum"; }
-  .spec-strip .num small { display: block; font-size: 14px; color: var(--ink-soft); font-weight: 400; letter-spacing: 0.04em; margin-top: 6px; }
-  .spec-strip .lbl { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-top: 16px; line-height: 1.5; }
+  .spec-strip .num { font-family: var(--display); font-size: 44px; font-weight: 500; line-height: 1; color: var(--blue-deep); letter-spacing: -0.02em; font-feature-settings: "lnum"; min-height: 50px; white-space: nowrap; }
+  .spec-strip .num small { font-size: 18px; color: var(--ink-soft); font-weight: 400; }
+  .spec-strip .lbl { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-top: 10px; }
 
   /* ---------- Safety badge ---------- */
   .safety-banner {
@@ -668,8 +668,8 @@
     background: var(--white);
     border: 1px solid var(--rule);
     border-radius: var(--radius-md);
-    padding: 36px;
-    margin: 40px 0;
+    padding: 32px;
+    margin: 32px 0;
   }
   .safety-medal {
     aspect-ratio: 1; background: var(--ink); color: var(--white);
@@ -711,7 +711,7 @@
     aspect-ratio: 16/9;
     border-radius: var(--radius-md);
     overflow: hidden;
-    margin: 48px 0;
+    margin: 36px 0;
     position: relative;
     display: flex; align-items: flex-end;
     padding: 18px 22px;
@@ -774,7 +774,7 @@
     font-weight: 600;
     border-bottom: 1px solid var(--rule);
     background: var(--paper-2);
-    vertical-align: bottom;
+    vertical-align: top;
   }
   .cross-table thead th .model {
     display: block;
@@ -921,8 +921,8 @@
   .findlay-band {
     background: var(--ink);
     color: var(--white);
-    margin: 80px 0 0;
-    padding: 100px 0 90px;
+    margin: 56px 0 0;
+    padding: 72px 0 64px;
     border-radius: var(--radius-md);
     position: relative;
     overflow: hidden;
@@ -955,8 +955,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0;
-    margin-top: 64px;
-    padding-top: 56px;
+    margin-top: 48px;
+    padding-top: 40px;
     border-top: 1px solid rgba(255,255,255,.15);
   }
   .trust-grid .item {
@@ -973,7 +973,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 48px;
-    margin-top: 72px;
+    margin-top: 56px;
   }
   .findlay-extras h5 { font-family: var(--display); font-size: 20px; font-weight: 500; margin: 0 0 20px; color: var(--white); padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.12); }
   .findlay-extras p { color: rgba(255,255,255,.75); font-size: 14px; line-height: 1.7; margin: 0 0 16px; }
@@ -981,10 +981,10 @@
   .findlay-extras strong { color: var(--white); font-weight: 600; }
 
   /* ---------- FAQ accordion ---------- */
-  .faq { margin: 36px 0; }
+  .faq { margin: 28px 0; }
   .faq details {
     border-top: 1px solid var(--ink);
-    padding: 28px 0;
+    padding: 22px 0;
   }
   .faq details:last-of-type { border-bottom: 1px solid var(--ink); }
   .faq summary {
@@ -1024,8 +1024,8 @@
     background: var(--blue-deep);
     color: var(--white);
     border-radius: var(--radius-md);
-    padding: 56px 56px 52px;
-    margin: 64px 0;
+    padding: 48px 48px 44px;
+    margin: 48px 0;
     position: relative;
     overflow: hidden;
     isolation: isolate;
@@ -1100,8 +1100,8 @@
   /* ---------- Sources ---------- */
   .sources {
     background: var(--paper-2);
-    padding: 60px 0;
-    margin-top: 80px;
+    padding: 48px 0;
+    margin-top: 56px;
     border-top: 1px solid var(--rule);
   }
   .sources h3 { font-family: var(--display); font-size: 28px; font-weight: 500; margin: 0 0 8px; }
@@ -1116,7 +1116,7 @@
 
   /* ---------- Closing CTA ---------- */
   .closing-cta {
-    padding: 100px 0 120px;
+    padding: 72px 0 88px;
     text-align: center;
     background: var(--paper-2);
     border-top: 1px solid var(--rule);
@@ -1167,15 +1167,15 @@
     .article-grid > .body { max-width: 100%; }
     .toc { position: static; max-height: none; overflow-y: visible; }
     .gutter { position: static; max-height: none; overflow-y: visible; }
-    .hero { padding: 48px 0 36px; }
+    .hero { padding: 36px 0 28px; }
     .hero h1 { font-size: clamp(32px, 8vw, 44px); }
     .hero-meta { grid-template-columns: 1fr 1fr; gap: 18px; }
-    section.s { padding: 64px 0; }
+    section.s { padding: 48px 0; }
     .trims { grid-template-columns: 1fr; border: none; }
     .trim { border-right: none !important; border-bottom: 1px solid var(--rule) !important; padding: 28px 0; }
     .trim:last-child { border-bottom: none !important; }
     .findlay-extras { grid-template-columns: 1fr; gap: 36px; }
-    .findlay-band { padding: 64px 0 56px; }
+    .findlay-band { padding: 48px 0 40px; }
     .findlay-band h2 { font-size: 32px; }
     .findlay-band .band-deck { font-size: 17px; }
     .trust-grid { grid-template-columns: 1fr 1fr; padding-top: 36px; margin-top: 44px; }
@@ -1285,7 +1285,7 @@
     .trust-grid { grid-template-columns: 1fr !important; }
     .trust-grid .item { border-right: none !important; padding-left: 0 !important; }
     .spec-strip { grid-template-columns: 1fr !important; }
-    .spec-strip .item { padding-left: 0 !important; padding-right: 0 !important; }
+    .spec-strip .item { padding-right: 0 !important; }
   }
 
 
@@ -1539,34 +1539,34 @@
 
         <div class="trims">
           <article class="trim">
-            <div class="engine-row"><span class="engine">12,000 mi · book value</span><span class="badge">Air filtration</span></div>
+            <div class="engine-row"><span class="engine">12,000 mi</span><span class="badge">Air</span></div>
             <h4 class="name">Cabin air filter</h4>
-            <p class="equip"><strong>The valley cuts that interval roughly in half.</strong> Between construction dust on the south end and wind off the dry lake beds, we've cut open filters at 7,000 miles that look like they've been in for two years. If your AC airflow has dropped or you can smell the previous driver's history, it's time, regardless of mileage.</p>
+            <p class="equip"><strong>The valley cuts that interval in half.</strong> Between construction dust and dry lake-bed wind, we've cut open filters at 7,000 miles that look two years old. If your AC airflow has dropped, it's time.</p>
           </article>
           <article class="trim">
-            <div class="engine-row"><span class="engine">Seal-life issue</span><span class="badge">Climate</span></div>
+            <div class="engine-row"><span class="engine">Seal life</span><span class="badge">Climate</span></div>
             <h4 class="name">AC system</h4>
-            <p class="equip"><strong>Not the refrigerant, the seals.</strong> Refrigerant doesn't disappear, but the seals it lubricates dry out faster when the system runs at maximum capacity for four months straight. If your AC blew ice-cold last summer and merely cool this summer, the refrigerant level is probably fine, it's the seals talking.</p>
+            <p class="equip"><strong>Not the refrigerant, the seals.</strong> They dry out faster when the AC runs at maximum capacity four months straight. Ice-cold last summer and merely cool this summer? Probably the seals.</p>
           </article>
           <article class="trim">
-            <div class="engine-row"><span class="engine">11 yr / 137,500 mi</span><span class="badge">Cooling</span></div>
-            <h4 class="name">Subaru Super Coolant</h4>
-            <p class="equip"><strong>We don't sell early flushes.</strong> Subaru Super Coolant is rated for 11 years or 137,500 miles before its first replacement, then 6 years or 75,000 miles after that. That's the spec, and we follow it. If yours doesn't need one, we'll tell you.</p>
+            <div class="engine-row"><span class="engine">137,500 mi</span><span class="badge">Coolant</span></div>
+            <h4 class="name">Super Coolant</h4>
+            <p class="equip"><strong>We don't sell early flushes.</strong> Subaru Super Coolant is rated 11 years or 137,500 miles to first replacement, then 6 years or 75,000 after. We follow that spec. If yours doesn't need one, we say so.</p>
           </article>
           <article class="trim wilderness">
-            <div class="engine-row"><span class="engine">30,000 mi · tested</span><span class="badge">Hydraulic</span></div>
+            <div class="engine-row"><span class="engine">30,000 mi</span><span class="badge">Brakes</span></div>
             <h4 class="name">Brake fluid</h4>
-            <p class="equip"><strong>We test water content with a meter, not a calendar.</strong> Every 30,000 miles per Subaru's manual. The heat-and-cool cycle on Vegas brake fluid pulls moisture in faster than the Pacific Northwest spec assumed. If yours is dry, we'll tell you.</p>
+            <p class="equip"><strong>Tested with a meter, not a calendar.</strong> Every 30,000 miles per Subaru's manual. The Vegas heat-cool cycle pulls moisture in faster than the Pacific Northwest spec assumed. If dry, we tell you.</p>
           </article>
           <article class="trim">
-            <div class="engine-row"><span class="engine">30,000 mi · inspect</span><span class="badge">Drivetrain</span></div>
+            <div class="engine-row"><span class="engine">30,000 mi</span><span class="badge">Trans</span></div>
             <h4 class="name">CVT fluid</h4>
-            <p class="equip"><strong>Severe-duty matters.</strong> Subaru's interval is conservative; a 30,000-mile inspection covers most Outbacks and Foresters through warranty. Tow toward Mt Charleston, drive Mojave, or commute the I-15 grade in summer, that's severe-duty. We pull a sample and tell you if your fluid's still doing its job.</p>
+            <p class="equip"><strong>Severe-duty matters.</strong> Subaru's interval is conservative; a 30,000-mile inspection covers most owners through warranty. Tow Charleston, drive Mojave, commute I-15 in summer? Severe duty.</p>
           </article>
           <article class="trim flagship">
-            <div class="engine-row"><span class="engine">Genuine Subaru only</span><span class="badge">Lubrication</span></div>
-            <h4 class="name">Engine oil &amp; filter</h4>
-            <p class="equip"><strong>The right filter for your engine.</strong> 4.4 quarts of 0W-20 on the 2.5L NA. 4.8 quarts on the 2.4T turbo. The wrong filter on a turbo has a wrong bypass valve, and a wrong bypass valve under turbo oil pressure is how turbos get oil-starved at 80,000 miles.</p>
+            <div class="engine-row"><span class="engine">OEM filter</span><span class="badge">Engine</span></div>
+            <h4 class="name">Engine oil</h4>
+            <p class="equip"><strong>The right filter for your engine.</strong> 4.4 quarts of 0W-20 on the 2.5L NA, 4.8 on the 2.4T turbo. Wrong filter has the wrong bypass valve, and that's how turbos get oil-starved at 80,000 miles.</p>
           </article>
         </div>
 
@@ -1628,7 +1628,7 @@
 
         <figure class="full-img cargo has-photo" role="img" aria-label="Subaru technician working on a brake rotor on the lift">
           <img class="scene"
-               src="gemini%20las%20vegas%204.png"
+               src="gemini%20las%20vegas%204.webp"
                alt="A factory-trained Subaru technician in nitrile gloves servicing a brake rotor on a Subaru raised on the orange shop lift"
                loading="lazy"
                width="1365"
@@ -1637,16 +1637,8 @@
           <figcaption class="visually-hidden">A factory-trained Subaru technician at Subaru of Las Vegas servicing a brake rotor on a vehicle raised on the shop lift, the kind of work a quick-lube can't perform to OEM spec.</figcaption>
         </figure>
 
-        <div class="safety-banner">
-          <div class="safety-medal">
-            <span class="yr">Master</span>
-            <span class="award">Subaru<span class="plus"> Tech</span></span>
-          </div>
-          <div class="copy">
-            <h4>What "Subaru Master Technician" actually means.</h4>
-            <p><a href="https://www.subaruoflasvegas.com/subaru-certified-technicians/" rel="noopener">Subaru of America's national Master Technician program</a> is not a title you get for showing up. To earn it: complete the entire Subaru Technical Curriculum, pass every instructor-led course, complete every web-based and self-study course, complete all Subaru New Technology Training, serve at least five years as a Subaru Technician, and obtain and maintain eight ASE certifications (A1–A8), plus six Subaru-specific certs in engine, transmission, brakes, chassis &amp; suspension, electrical, and emissions.</p>
-          </div>
-        </div>
+        <h3>What "Subaru Master Technician" actually means.</h3>
+        <p><a href="https://www.subaruoflasvegas.com/subaru-certified-technicians/" rel="noopener">Subaru of America's national Master Technician program</a> is not a title you get for showing up. To earn it: complete the entire Subaru Technical Curriculum, pass every instructor-led course, complete every web-based and self-study course, complete all Subaru New Technology Training, serve at least five years as a Subaru Technician, and obtain and maintain eight ASE certifications (A1–A8), plus six Subaru-specific certs in engine, transmission, brakes, chassis &amp; suspension, electrical, and emissions.</p>
 
         <blockquote class="pull">
           If a turbo fails at 58,000 miles and your service records show wrong-spec oil at three of the last six changes, the warranty conversation becomes more complicated than it needed to be.
@@ -1693,15 +1685,15 @@
         </ul>
         <p>A general parts store doesn't always know which fluid your VIN takes. If your Outback ends up with CVTF-II in a transmission spec'd for CVTF-III, you don't notice immediately. You notice 30,000 miles later, when the chain starts slipping and the diagnosis is a $5,800 transmission. We carry every fluid Subaru calls for, and we look up your VIN before we open a bottle.</p>
 
-        <figure class="full-img lv has-photo" role="img" aria-label="Genuine Subaru battery service at the parts counter">
+        <figure class="full-img lv has-photo" role="img" aria-label="Genuine Subaru brake fluid reservoir under the hood">
           <img class="scene"
-               src="gemini%20las%20vegas%202.png"
-               alt="A Subaru parts counter staffer in a Subaru Quality Driven Service shirt handing a Genuine Subaru battery to a customer in a blue Subaru jacket, with a rack of additional Subaru batteries in the background"
+               src="gemini%20las%20vegas%205.png"
+               alt="The Genuine Subaru brake fluid reservoir under the hood with its yellow OEM cap, the master cylinder, and surrounding engine-bay hardware"
                loading="lazy"
-               width="1365"
+               width="1364"
                height="768" />
-          <span class="credit">SUBARU OF LAS VEGAS · PARTS COUNTER</span>
-          <figcaption class="visually-hidden">Genuine Subaru battery service at the Subaru of Las Vegas parts counter, the right part, looked up by VIN, on the same shelves the technicians pull from.</figcaption>
+          <span class="credit">SUBARU OF LAS VEGAS · UNDER THE HOOD</span>
+          <figcaption class="visually-hidden">A Subaru brake fluid reservoir with its Genuine Subaru OEM cap, the kind of OEM-spec fluid and parts the Subaru of Las Vegas team uses on every service.</figcaption>
         </figure>
 
         <h3>Symmetrical AWD and tires</h3>
@@ -1735,17 +1727,6 @@
           <li><strong>Contact info.</strong> Name, phone, email. Our Service BDC team, led by <strong>Taylor Romero</strong>, with Subaru for over 12 years, follows up if anything needs clarifying.</li>
           <li><strong>Confirm.</strong> Email and text confirmation, with a reminder before your appointment.</li>
         </ol>
-
-        <figure class="full-img cargo has-photo" role="img" aria-label="A Subaru on the four-wheel alignment rack at Subaru of Las Vegas">
-          <img class="scene"
-               src="gemini%20las%20vegas%203.png"
-               alt="A white Subaru raised on the alignment rack with target sensors clamped to the front and rear wheels, ready for a four-wheel alignment"
-               loading="lazy"
-               width="2730"
-               height="1536" />
-          <span class="credit">SUBARU OF LAS VEGAS · ALIGNMENT BAY</span>
-          <figcaption class="visually-hidden">A Subaru on the four-wheel alignment rack at Subaru of Las Vegas, sensors clamped to all four wheels, the procedure that follows tire replacement on a Symmetrical AWD vehicle.</figcaption>
-        </figure>
 
         <h3>Other ways</h3>
         <p><strong>Phone scheduling:</strong> <a class="tel" href="tel:+17024952149">702-495-2149</a> during service hours.</p>
